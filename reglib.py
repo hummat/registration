@@ -5,10 +5,11 @@ import csv
 import numpy as np
 
 
-def load_library(path=os.path.curdir, name="libregistration"):
+def load_library(path: str = os.getcwd(), name: str = "libregistration_pcl110") -> None:
     global REGLIB
     try:
         REGLIB = np.ctypeslib.load_library(libname=name, loader_path=path)
+        print(REGLIB)
     except OSError:
         print("Compiled C++ library was not found in the current directory. Please use `load_library` to load it from "
               "a custom directory, then ignore this message.")
@@ -17,7 +18,7 @@ def load_library(path=os.path.curdir, name="libregistration"):
 load_library()
 
 
-def load_data(path, delimiter=' '):
+def load_data(path: str, delimiter: str = ' ') -> np.ndarray:
     """Loads point cloud data of type `CSV`, `PLY` and `PCD`.
 
     The file should contain one point per line where each number is separated by the `delimiter` character.

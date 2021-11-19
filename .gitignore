@@ -4,6 +4,7 @@
 
 .idea
 cmake-build-debug
+build
 
 #########
 #  C++  #
