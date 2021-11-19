@@ -15,6 +15,14 @@ The following registration algorithms are supported so far:
 In order to use the module with the pre-compiled library, you need to have
 Python 3 and Numpy installed.
 
+As this code is only a thin wrapper around some of PCLs functionality, you will also have to install PCL itself.
+On Ubuntu, use
+```
+sudo apt install libpcl-dev
+```
+Please check out the official PCL website linked above for installation
+instructions on other architectures.
+
 If you would like to make changes to the C++ code and compile it yourself you will
 additionally need to install the g++/c++ compiler, CMake and the PCL package.
 
