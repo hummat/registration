@@ -24,7 +24,7 @@ Please check out the official PCL website linked above for installation
 instructions on other architectures.
 
 If you would like to make changes to the C++ code and compile it yourself you will
-additionally need to install the g++/c++ compiler, CMake and the PCL package.
+additionally need to install the g++/c++ compiler and CMake.
 
 ## Usage
 The most straight forward way to use this module is to rely on the pre-compiled
